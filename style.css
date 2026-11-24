@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f4;
+    color: #26352b;
+}
+
+header {
+    background-color: #176b45;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    color: #176b45;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5ce;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #176b45;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #105235;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.summary-card {
+    background-color: #e1f2e7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.summary-card p {
+    font-size: 20px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e1e8e3;
+}
+
+.expense-details {
+    overflow-wrap: anywhere;
+}
+
+.expense-details p {
+    margin: 5px 0;
+}
+
+.delete-button {
+    background-color: #b83232;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.delete-button:hover {
+    background-color: #8f2020;
+}
+
+.clear-button {
+    background-color: #555;
+}
+
+#message {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #637068;
+}
+
+@media (max-width: 650px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-item {
+        align-items: flex-start;
+    }
+}
